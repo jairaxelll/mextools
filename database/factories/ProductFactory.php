@@ -32,7 +32,7 @@ class ProductFactory extends Factory
             'name' => $names[$index % 6],
             'description' => 'Equipo de alto rendimiento diseñado específicamente para tolerar las jornadas más intensas de trabajo industrial, garantizando precisión, seguridad y durabilidad extrema.',
             'image_url' => $images[$index++ % 6],
-            'price' => $this->faker->randomFloat(2, 1000, 15000),
+            'price' => rand(1000, 15000),
             'is_active' => true,
         ];
     }
